@@ -1,0 +1,100 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 13px;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.wrapper {
+    width: 30%;
+    padding: 30px;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.email input, .password input, .passwordCheck input, .name input{
+    width: 100%;
+    height: 50px;
+    line-height: 35px;
+    border-radius: 30px;
+    padding: 0px 20px;
+    border: 1px solid lightgray;
+    outline: none;
+}
+
+.membershiptype input[type=radio]{
+    display: none;
+}
+
+.membershiptype input[type=radio]+label{
+    display: inline-block;
+    cursor: pointer;
+    height: 35px;
+    width: 90px;
+    border: 1px solid lightgray;
+    line-height: 28px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.membershiptype input[type=radio]+label{
+    background-color: #fff;
+    color: lightgray;
+}
+
+.membershiptype input[type=radio]:checked+label{
+    background-color: lightgray;
+    color: black;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 2em;
+}
+
+div {
+    padding-top: 3px;
+    padding-bottom: 8px;
+}
+
+.title {
+    text-align: center;
+    font-weight: 700;
+}
+
+.membershiptype {
+    text-align: center;
+}
+
+button{
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    border: 0;
+    outline: none;
+    border-radius: 40px;
+    background: linear-gradient(to left, rgb(54, 55, 143), rgb(124, 119, 197));
+    color: white;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+}
+
+.error{
+    font-size: 1px;
+    height: 20px;
+    color:red;
+    font-weight: 700;
+}

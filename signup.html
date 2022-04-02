@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>회원가입</title>
+
+    <link href="signup.css" rel="stylesheet" />
+    <script src="signup.js"></script>
+
+</head>
+
+<body>
+    <main>
+        <div class="wrapper">
+            <div class="title">
+                <h2 style="font-size: 21px;">회원가입</h2>
+            </div>
+            <div class="email">
+                <h4>이메일(ID)</h4>
+                <input id="email" type="text" placeholder="이메일(ID)을 입력해 주세요.">
+                <div id="emailError" class="error"></div>
+            </div>
+            <div class="password">
+                <h4>비밀번호</h4>
+                <input id="password" type="password" placeholder="비밀번호를 입력해 주세요.">
+                <div id="passwordError" class="error"></div>
+            </div>
+            <div class="passwordCheck">
+                <input id="passwordCheck" type="password" placeholder="비밀번호를 다시 입력해 주세요.">
+                <div id="passwordCheckError" class="error"></div>
+            </div>
+            <div class="name">
+                <h4>닉네임</h4>
+                <input id="name"  type="text" placeholder="닉네임을 입력해 주세요.">
+                <div id="nameError" class="error"></div>
+            </div>
+            <div class="type">
+                <h4>회원 유형</h4>
+                <div class="membershiptype">
+                    <input id="type_people" type="radio" name="type"><label for="type_people">일반</label>
+                    <input id="type_teacher" type="radio" name="type"><label for="type_teacher">강사</label>
+                    <div id="typeError" class="error"></div>
+                </div>
+            </div>
+            <div class="signUp">
+                <button id="signUpButton" onclick="signUpCheck()">가입하기</button>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
